@@ -13,7 +13,7 @@ export const useBackButton = (handler) => {
       }
     });
 
-    // Cleanup the listener on unmount.
+    // Cleanup the listener on unmount
     return () => unlisten();
   }, [location, navigate, handler]);
 };
